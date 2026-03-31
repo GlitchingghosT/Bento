@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BENTO GRID</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/images/favicon-32x32.png"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+      :root {
+        /* ## Colors */
+
+        --Purple-100: hsl(254, 88%, 90%);
+        --Purple-500: hsl(256, 67%, 59%);
+
+        --Yellow-100: hsl(31, 66%, 93%);
+        --Yellow-500: hsl(39, 100%, 71%);
+
+        --White: hsl(0, 0%, 100%);
+        --Black: hsl(0, 0%, 7%);
+      }
+
+      body {
+        font-family: "DM Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body
+    class="w-full max-w-[375px] m-auto bg-[var(--Purple-100)]/20 pb-15 md:max-w-[1440px] md:flex md:flex-col md:items-center"
+  >
+    <div class="md:flex">
+      <div class="md:flex md:flex-col md:gap-5">
+        <header
+          class="bg-[var(--Purple-500)] max-w-90 h-75 mt-7.5 mx-5 flex flex-col items-center gap-10 rounded-[8px] md:max-w-145"
+        >
+          <h1
+            class="font-[500] text-[45px] text-center text-[var(--White)] pt-8 px-8 tracking-[01px] leading-[1] md:text-[50px] md:px-7"
+          >
+            Social Media
+            <span class="text-[var(--Yellow-500)]">10x</span> Faster with AI
+          </h1>
+          <div class="flex flex-col items-center gap-2">
+            <img
+              src="/assets/images/illustration-five-stars.webp"
+              alt=""
+              class="w-40"
+            />
+            <p class="text-[18px] font-[00] text-[var(--Yellow-100)]/80">
+              Over 4,000 5-star reviews
+            </p>
+          </div>
+        </header>
+
+        <!-- ====================================== -->
+
+        <div class="md:flex md:gap-5">
+          <section
+            class="bg-[var(--White)] max-w-90 mt-10 mx-5 rounded-[6px] md:max-w-70 md:me-0 md:mt-0"
+          >
+            <div class="flex flex-col gap-4 py-5 ps-3">
+              <img
+                src="/assets/images/illustration-multiple-platforms.webp"
+                alt=""
+              />
+              <h2
+                class="font-[600] text-[22px] pe-5 tracking-[-1px] leading-[22px]"
+              >
+                Manage multiple accounts and platforms.
+              </h2>
+            </div>
+          </section>
+
+          <!-- ============================ -->
+
+          <section
+            class="bg-[var(--Yellow-500)] max-w-90 h-50 mt-10 mx-5 rounded-[6px] ps-5 pt-5 relative overflow-hidden md:max-w-70 md:ms-0 md:mt-0"
+          >
+            <h3
+              class="font-[600] pe-10 text-[24px] tracking-[-1px] leading-[1]"
+            >
+              Maintain a consistent posting schedule.
+            </h3>
+            <img
+              src="/assets/images/illustration-consistent-schedule.webp"
+              alt=""
+              class="w-40 absolute top-23"
+            />
+          </section>
+        </div>
+      </div>
+
+      <!-- ============================== -->
+
+      <section
+        class="max-w-90 h-112 bg-[var(--Purple-100)] mx-5 mt-10 rounded-[8px] flex flex-col items-center gap-5 pt-7 md:ms-0 md:mt-7.5 md:h-130 md:max-w-60 md:ps-7"
+      >
+        <h3
+          class="text-[22px] font-[600] tracking-[-1px] md:pe-10 md:leading-[1]"
+        >
+          Schedule to social media.
+        </h3>
+        <img
+          src="/assets/images/illustration-schedule-posts.webp"
+          alt=""
+          class="w-70 md:overflow-hidden"
+        />
+        <p class="px-8 font-[500] text-center md:text-start">
+          Optimize post timings to publish content at the perfect time for your
+          audience.
+        </p>
+      </section>
+    </div>
+
+    <!-- ================================ -->
+
+    <div class="flex flex-row-reverse">
+      <section
+        class="max-w-90 h-85 bg-[var(--Purple-500)] mx-5 mt-10 rounded-[8px] flex flex-col items-center gap-10 pt-7 md:max-w-140 md:h-60 md:pt-2 md:flex md:flex-row md:gap-[5px] md:ps-7"
+      >
+        <img
+          src="/assets/images/illustration-grow-followers.webp"
+          alt=""
+          class="w-50 md:w-55"
+        />
+        <h3
+          class="ps-13 pe-13 text-[25px] font-[500] tracking-[-0.25px] leading-[1] text-white text-center md:text-start md:ps-3 md:pe-18"
+        >
+          Grow followers with non-stop content.
+        </h3>
+      </section>
+
+      <!-- ================================ -->
+
+      <section
+        class="max-w-90 bg-[var(--White)] mx-5 mt-10 rounded-[8px] flex flex-col items-start gap-5 pt-7 pb-5 ps-5 md:w-60"
+      >
+        <div>
+          <h2 class="text-[40px] font-[600]">>56%</h2>
+          <p class="font-[500] text-4.5">faster audience growth</p>
+        </div>
+        <img
+          src="/assets/images/illustration-audience-growth.webp"
+          alt=""
+          class="w-40"
+        />
+      </section>
+    </div>
+
+    <!-- ============================ -->
+
+    <section
+      class="max-w-90 bg-[var(--Yellow-100)] mx-5 mt-10 rounded-[8px] flex flex-col items-start gap-5 pt-7 pb-5 ps-5"
+    >
+      <h2 class="text-[26px] font-[600] tracking-[-1px] leading-[1]">
+        Create and schedule content
+        <span class="text-[var(--Purple-500)] italic">quicker.</span>
+      </h2>
+      <img
+        src="/assets/images/illustration-create-post.webp"
+        alt=""
+        class="w-40"
+      />
+    </section>
+
+    <!-- ================================ -->
+
+    <section
+      class="max-w-90 bg-[var(--Yellow-500)] mx-5 mt-10 rounded-[8px] flex flex-col items-start gap-5 pt-7 pb-5 ps-7"
+    >
+      <h2 class="text-[25px] font-[550] tracking-[-1px] leading-[1] pe-15">
+        Write your content using AI.
+      </h2>
+      <img
+        src="/assets/images/illustration-ai-content.webp"
+        alt=""
+        class="w-45"
+      />
+    </section>
+  </body>
+</html>
